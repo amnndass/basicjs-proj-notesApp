@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotesApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#ffc2d1]">
+    <div class="p-5 flex justify-between bg-[#fb6f92] "  >
+        <span id="heading" class="m-2  block  flex-row h-16   text-4xl font-sans text-[#ffe5ec]">
+            <img src="assets/sticky-notes.png" class="size-16 inline-block" alt="">
+            NOTES
+        </span>
+
+        <div class="flex space-x-4 flex-wrap justify-center items-center mx-12">
+            <div class="">
+                <span class="flex mx-4 text-white justify-center items-center text-2xl"> <img src="assets/user.png" class="mx-2 size-8" alt="">Profile</span>
+            </div>
+            <div>
+                <img src="assets/brightness.png" class="size-8 " alt="">
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="h-lvh flex justify-between">
+        <div class="">
+            <button id="createnotes"  class="ml-16 cursor-pointer  font-medium text-xl font-sans mt-12 bg-[#fb6f92] text-white p-4 rounded-3xl"><img src="assets/design.png" class="size-6 inline-block mx-2" alt="">Create Notes</button>
+        <p contenteditable="true" id="ptag" class="hidden relative h-[225px] w-[450px] m-12 rounded-xl p-4 border-none outline-none bg-white selection:bg-pink-300">
+            <img src="assets/save.png" id="save" class="cursor-pointer size-6 absolute bottom-0 m-2 right-8" alt="">
+            <img src="assets/delete.png" id="delete" class="cursor-pointer size-6 absolute bottom-0 right-0 m-2 " alt="">
+        </p>
+        </div>
+
+        <div class="w-2/3 m-7 bg-[#ffe5ec] p-8 rounded-xl h-screen overflow-auto" >
+            <ul class="scroll-m-1 " id="ul">
+                <!-- <li  class="relative outline-none block h-[150px] rounded-2xl p-3 bg-white my-4"><img src="assets/delete.png" class="size-6 absolute bottom-0 right-0 m-2 " alt=""></li>
+                <li  class="outline-none block h-[150px] rounded-2xl p-3 bg-white my-4">outline-none</li>
+                <li  class="outline-none block h-[150px] rounded-2xl p-3 bg-white my-4">outline-none</li>
+                <li  class="outline-none block h-[150px] rounded-2xl p-3 bg-white my-4">outline-none</li>
+                <li  class="outline-none block h-[150px] rounded-2xl p-3 bg-white my-4">outline-none</li> -->
+                <!-- <li>two</li>
+                <li>three</li>
+                <li>four</li>
+                <li>five</li>
+                <li>six</li> -->
+            </ul>
+        </div>
+
+    </div>
+    
+    <!-- <div id="app" class="  flex ">
+        
+        <div id="live" class="    ">
+            
+
+            <div>
+                <span class="block m-6 mt-12 text-3xl">Add Notes</span>
+                <input class="px-36 py-32 m-6"  type="text" size="40px">
+
+                <div id="calender">
+                    
+                </div>
+            </div>
+
+        </div>
+
+        
+
+        <div id="static" class="      ">
+            <ul id="saved-notes" class="p-7 rounded-3xl bg-[#8b8c89] h-full">
+                <li class="    bg-[#a3cef1] rounded-3xl  w-auto h-24">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, odit voluptas. Voluptate totam reprehenderit corporis tenetur reiciendis veniam, dolorem esse commodi odit accusamus magni sint. Iusto sequi cum fuga voluptatum?</li>
+                
+            </ul>
+        </div>
+    </div> -->
+</body>
+
+<script src="main.js"></script>
+</html>
